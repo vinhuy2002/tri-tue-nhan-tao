@@ -15,10 +15,10 @@ def createGraph():
         graph[b].append(a)
     return graph
 
-def timDuong(graph, start, end):
+def timDuong(graph, s, e):
     visited = set()
-    visited.add(start)
-    return __timDuong(graph, start, end, visited)
+    visited.add(s)
+    return __timDuong(graph, s, e, visited)
 
 def __timDuong(graph, start, end, visited):
     if start == end:
@@ -33,7 +33,7 @@ def __timDuong(graph, start, end, visited):
                     duongDi.insert(0, start)
                     return duongDi
     
-    return "Khong co duong di!"
+    return None
 
 if __name__ == "__main__":
     graph = createGraph()
