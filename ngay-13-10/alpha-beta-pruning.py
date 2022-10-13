@@ -1,5 +1,5 @@
 MAX, MIN = 10000, -10000
-
+#Hello
 def minimax(depth, nodeIndex, maximizingPlayer, values, alpha, beta):
 	if depth == 3:
 		return values[nodeIndex]
